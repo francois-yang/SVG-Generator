@@ -47,7 +47,7 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22042
         script: |
-          cd /var/www/<dossier_app>/server
+          cd /var/www/autonom_tp/server
           npm ci
           npm install astro
           npm install send server-destroy
