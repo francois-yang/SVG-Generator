@@ -11,7 +11,7 @@ export enum Collections {
 	Mfas = "_mfas",
 	Otps = "_otps",
 	Superusers = "_superusers",
-	Svg = "svg",
+	Svg = "Svg",
 	Users = "users",
 }
 
@@ -130,7 +130,7 @@ export type CollectionRecords = {
 	_mfas: MfasRecord
 	_otps: OtpsRecord
 	_superusers: SuperusersRecord
-	svg: SvgRecord
+	Svg: SvgRecord
 	users: UsersRecord
 }
 
@@ -140,7 +140,7 @@ export type CollectionResponses = {
 	_mfas: MfasResponse
 	_otps: OtpsResponse
 	_superusers: SuperusersResponse
-	svg: SvgResponse
+	Svg: SvgResponse
 	users: UsersResponse
 }
 
@@ -153,6 +153,6 @@ export type TypedPocketBase = PocketBase & {
 	collection(idOrName: '_mfas'): RecordService<MfasResponse>
 	collection(idOrName: '_otps'): RecordService<OtpsResponse>
 	collection(idOrName: '_superusers'): RecordService<SuperusersResponse>
-	collection(idOrName: 'svg'): RecordService<SvgResponse>
+	collection(idOrName: 'Svg'): RecordService<SvgResponse>
 	collection(idOrName: 'users'): RecordService<UsersResponse>
 }
