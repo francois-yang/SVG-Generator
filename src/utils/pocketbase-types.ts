@@ -96,7 +96,7 @@ export type SvgRecord<Tchat_history = unknown> = {
 	code_svg?: HTMLString
 	created?: IsoDateString
 	id: string
-	nom?: string
+	name?: string
 	updated?: IsoDateString
 }
 

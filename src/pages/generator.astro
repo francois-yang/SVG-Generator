@@ -88,7 +88,7 @@ console.log('Locale in generator:', locale);
 			console.log("Saving SVG: ", JSON.stringify(svgOutput));
 			
 			const params: Collection.Svg = {
-				nom: name,
+				name: name,
 				code_svg: svgOutput || "<svg></svg>",
 				chat_history: JSON.stringify(promptList),
 			};
