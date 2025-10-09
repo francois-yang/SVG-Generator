@@ -34,7 +34,7 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22042
         source: "dist/*"
-        target: "/var/www/autonom_tp/"
+        target: "/var/www/colle_tp/"
         strip_components: 1
         rm: false
         overwrite: true
@@ -47,8 +47,8 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22042
         script: |
-          cd /var/www/autonom_tp/server
+          cd /var/www/colle_tp/server
           npm ci
           npm install astro
           npm install send server-destroy
-          PORT=8092 pm2 restart app_fryg || PORT=8092 pm2 start entry.mjs --name app_fryg
+          PORT=8093 pm2 restart app_fryg || PORT=8093 pm2 start entry.mjs --name app_fryg
