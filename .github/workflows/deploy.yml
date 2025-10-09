@@ -51,4 +51,4 @@ jobs:
           npm ci
           npm install astro
           npm install send server-destroy
-          PORT=8093 pm2 restart app_fryg || PORT=8093 pm2 start entry.mjs --name app_fryg
+          PORT=8093 pm2 restart colle_tp || PORT=8093 pm2 start entry.mjs --name colle_tp
